@@ -3,138 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Club de Tennis - Portfolio</title>
+    <title>Club de Tennis - Accueil</title>
+    <meta name="description" content="Bienvenue au Club de Tennis. Découvrez nos installations et événements dans un cadre convivial.">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico">
 </head>
 <body>
-    <!-- HEADER -->
     <header>
         <div class="container header-container">
-            <div class="logo">Club de Tennis</div>
-            <nav>
+            <div class="logo"><a href="index.html">🎾 Club de Tennis</a></div>
+            <nav aria-label="Navigation principale">
                 <ul class="nav-links">
-                    <li><a href="#accueil">Accueil</a></li>
-                    <li><a href="#apropos">À propos</a></li>
-                    <li><a href="#installations">Installations</a></li>
-                    <li><a href="#evenements">Événements</a></li>
-                    <li><a href="#temoignages">Témoignages</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="index.html" class="active">Accueil</a></li>
+                    <li><a href="apropos.html">À propos</a></li>
+                    <li><a href="installations.html">Installations</a></li>
+                    <li><a href="evenements.html">Événements</a></li>
+                    <li><a href="temoignages.html">Témoignages</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
-                <div class="burger">
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                <div class="burger" aria-label="Menu mobile">
+                    <div></div><div></div><div></div>
                 </div>
             </nav>
         </div>
     </header>
 
-    <!-- HERO -->
-    <section id="accueil" class="hero">
+    <section class="hero">
         <div class="hero-content">
-            <h1>Bienvenue au Club de Tennis</h1>
-            <p>Découvrez l'expérience tennis dans un cadre élégant et convivial.</p>
-            <a href="#apropos" class="btn">Découvrir le club</a>
+            <h1>Bienvenue au <span>Club de Tennis</span></h1>
+            <p>Découvrez le plaisir du tennis dans un cadre unique et accueillant.</p>
+            <a href="apropos.html" class="btn">Découvrir le club</a>
         </div>
     </section>
 
-    <!-- À PROPOS -->
-    <section id="apropos" class="section">
+    <section class="section preview">
         <div class="container">
-            <h2>Notre club</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae purus non augue tincidunt facilisis.</p>
-        </div>
-    </section>
-
-    <!-- INSTALLATIONS -->
-    <section id="installations" class="section">
-        <div class="container">
-            <h2>Nos installations</h2>
+            <h2>Nos points forts</h2>
             <div class="cards">
                 <div class="card">
-                    <img src="https://via.placeholder.com/300x200" alt="Terrain 1">
-                    <h3>Terrain 1</h3>
-                    <p>Terre battue professionnelle avec éclairage nocturne.</p>
+                    <img src="images/terrain.jpg" alt="Terrains modernes">
+                    <h3>Installations modernes</h3>
+                    <p>Des terrains entretenus pour un jeu optimal, de jour comme de nuit.</p>
                 </div>
                 <div class="card">
-                    <img src="https://via.placeholder.com/300x200" alt="Terrain 2">
-                    <h3>Terrain 2</h3>
-                    <p>Gazon naturel pour matchs et entraînements.</p>
+                    <img src="images/evenement.jpg" alt="Événements sportifs">
+                    <h3>Événements sportifs</h3>
+                    <p>Tournois, matchs amicaux et stages pour tous les niveaux.</p>
                 </div>
                 <div class="card">
-                    <img src="https://via.placeholder.com/300x200" alt="Club-house">
-                    <h3>Club-house</h3>
-                    <p>Espace convivial avec vestiaires et salon détente.</p>
+                    <img src="images/clubhouse.jpg" alt="Club-house convivial">
+                    <h3>Club-house convivial</h3>
+                    <p>Un lieu pour se détendre après vos matchs et rencontrer d'autres membres.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ÉVÉNEMENTS -->
-    <section id="evenements" class="section section-alt">
-        <div class="container">
-            <h2>Événements</h2>
-            <div class="carousel">
-                <div class="carousel-item active">
-                    <img src="https://via.placeholder.com/400x250" alt="Événement 1">
-                    <p>Tournoi interne annuel</p>
-                </div>
-                <div class="carousel-item">
-                    <img src="https://via.placeholder.com/400x250" alt="Événement 2">
-                    <p>Match amical interclubs</p>
-                </div>
-                <div class="carousel-item">
-                    <img src="https://via.placeholder.com/400x250" alt="Événement 3">
-                    <p>Stage d'été pour jeunes</p>
-                </div>
-                <button class="prev">&#10094;</button>
-                <button class="next">&#10095;</button>
-            </div>
-        </div>
-    </section>
-
-    <!-- TÉMOIGNAGES -->
-    <section id="temoignages" class="section">
-        <div class="container">
-            <h2>Témoignages</h2>
-            <div class="testimonial-carousel">
-                <div class="testimonial active">
-                    <p>"Un club exceptionnel avec des installations parfaites."</p>
-                    <span>- Membre</span>
-                </div>
-                <div class="testimonial">
-                    <p>"Des entraîneurs professionnels et une ambiance conviviale."</p>
-                    <span>- Membre</span>
-                </div>
-                <div class="testimonial">
-                    <p>"J'adore venir ici pour jouer et participer aux événements."</p>
-                    <span>- Membre</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="section section-alt">
-        <div class="container">
-            <h2>Contact</h2>
-            <form>
-                <input type="text" placeholder="Nom" required>
-                <input type="email" placeholder="Email" required>
-                <textarea placeholder="Message" required></textarea>
-                <button type="submit" class="btn">Envoyer</button>
-            </form>
-        </div>
-    </section>
-
-    <!-- FOOTER -->
     <footer>
         <div class="container footer-container">
             <p>&copy; 2025 Club de Tennis - Tous droits réservés</p>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 </html>
-
