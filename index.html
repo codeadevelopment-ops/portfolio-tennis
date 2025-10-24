@@ -1,97 +1,95 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Club de Tennis - Accueil</title>
-    <meta name="description" content="Bienvenue au Club de Tennis. Découvrez nos installations et événements dans un cadre convivial.">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="favicon.ico">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Club de Tennis - Accueil</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-    <header>
-        <div class="container header-container">
-            <div class="logo"><a href="index.html">🎾 Club de Tennis</a></div>
-            <nav aria-label="Navigation principale">
-                <ul class="nav-links">
-                    <li><a href="index.html" class="active">Accueil</a></li>
-                    <li><a href="apropos.html">À propos</a></li>
-                    <li><a href="installations.html">Installations</a></li>
-                    <li><a href="evenements.html">Événements</a></li>
-                    <li><a href="temoignages.html">Témoignages</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-                <div class="burger" aria-label="Menu mobile">
-                    <div></div><div></div><div></div>
-                </div>
-            </nav>
-        </div>
-    </header>
 
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Bienvenue au <span>Club de Tennis</span></h1>
-            <p>Découvrez le plaisir du tennis dans un cadre unique et accueillant.</p>
-            <a href="apropos.html" class="btn">Découvrir le club</a>
-        </div>
-    </section>
-
-    <section class="section strengths">
-  <div class="container">
-    <h2>Nos points forts</h2>
-    <p class="subtitle">Découvrez ce qui fait la force de notre club de tennis</p>
-
-    <div class="strengths-grid">
-      <div class="strength">
-        <div class="strength-img">
-          <img src="images/terrains.jpg" alt="Terrains modernes">
-        </div>
-        <div class="strength-content">
-          <h3>Installations haut de gamme</h3>
-          <p>Des terrains en terre battue et en gazon naturel, entretenus quotidiennement pour offrir les meilleures conditions de jeu.</p>
-        </div>
+  <!-- HEADER -->
+  <header>
+    <div class="container header-container">
+      <div class="logo">
+        <a href="index.html">Club de Tennis</a>
       </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Accueil</a></li>
+          <li><a href="apropos.html">À propos</a></li>
+          <li><a href="installations.html">Installations</a></li>
+          <li><a href="evenements.html">Événements</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="burger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </nav>
+    </div>
+  </header>
 
-      <div class="strength">
-        <div class="strength-img">
-          <img src="images/evenement.jpg" alt="Événements sportifs">
-        </div>
-        <div class="strength-content">
-          <h3>Événements exclusifs</h3>
-          <p>Tournois internes, rencontres interclubs, stages d'été… Vivez le tennis autrement dans une ambiance conviviale.</p>
-        </div>
-      </div>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Bienvenue au <span>Club de Tennis</span></h1>
+      <p>Découvrez l’expérience tennis dans un cadre moderne et convivial.</p>
+      <a href="#points-forts" class="btn">Découvrir nos points forts</a>
+    </div>
+  </section>
 
-      <div class="strength">
-        <div class="strength-img">
-          <img src="images/clubhouse.jpg" alt="Club-house convivial">
+  <!-- NOS POINTS FORTS -->
+  <section id="points-forts" class="section">
+    <div class="container">
+      <h2>Nos points forts</h2>
+      <div class="cards">
+
+        <!-- Carte 1 -->
+        <div class="card">
+          <img src="images/terrains.jpg" alt="Terrains de tennis modernes" />
+          <h3>Terrains de tennis modernes</h3>
+          <p>Nos terrains de qualité professionnelle offrent un confort de jeu optimal, de jour comme de nuit.</p>
         </div>
-        <div class="strength-content">
+
+        <!-- Carte 2 -->
+        <div class="card">
+          <img src="images/evenement.jpg" alt="Événements sportifs" />
+          <h3>Événements et tournois</h3>
+          <p>Participez à des tournois conviviaux et des événements sportifs toute l’année.</p>
+        </div>
+
+        <!-- Carte 3 (placeholder pour plus tard) -->
+        <div class="card">
+          <img src="https://via.placeholder.com/400x250" alt="Club-house convivial" />
           <h3>Club-house convivial</h3>
-          <p>Un espace moderne et chaleureux pour se détendre, échanger et partager un moment après vos matchs.</p>
+          <p>Espace détente et restauration pour prolonger l’expérience du tennis dans une ambiance amicale.</p>
         </div>
-      </div>
 
-      <div class="strength">
-        <div class="strength-img">
-          <img src="images/coaching.jpg" alt="Coaching personnalisé">
-        </div>
-        <div class="strength-content">
+        <!-- Carte 4 (placeholder pour plus tard) -->
+        <div class="card">
+          <img src="https://via.placeholder.com/400x250" alt="Coaching personnalisé" />
           <h3>Coaching personnalisé</h3>
-          <p>Des entraîneurs diplômés pour vous accompagner dans votre progression technique, tactique et mentale.</p>
+          <p>Des entraîneurs expérimentés vous accompagnent pour améliorer votre jeu à votre rythme.</p>
         </div>
+
       </div>
     </div>
-  </div>
-</section>
- 
+  </section>
 
-    <footer>
-        <div class="container footer-container">
-            <p>&copy; 2025 Club de Tennis - Tous droits réservés</p>
-        </div>
-    </footer>
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-container">
+      <p>&copy; 2025 Club de Tennis - Tous droits réservés</p>
+      <div>
+        <a href="#"><img src="images/facebook-icon.svg" alt="Facebook"></a>
+        <a href="#"><img src="images/instagram-icon.svg" alt="Instagram"></a>
+      </div>
+    </div>
+  </footer>
 
-    <script src="script.js" defer></script>
+  <script src="script.js"></script>
 </body>
 </html>
