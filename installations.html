@@ -1,56 +1,62 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Installations - Club de Tennis</title>
-    <meta name="description" content="Découvrez les terrains et infrastructures du Club de Tennis.">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Installations - Club de Tennis</title>
+  <meta name="description" content="Terrains, club-house et équipements du Club de Tennis.">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="container header-container">
-            <div class="logo"><a href="index.html">🎾 Club de Tennis</a></div>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="apropos.html">À propos</a></li>
-                    <li><a href="installations.html" class="active">Installations</a></li>
-                    <li><a href="evenements.html">Événements</a></li>
-                    <li><a href="temoignages.html">Témoignages</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <header class="site-header">
+    <div class="container header-container">
+      <a class="logo" href="index.html">🎾 Club de Tennis</a>
+      <nav aria-label="Navigation principale">
+        <ul class="nav-links">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="a-propos.html">À propos</a></li>
+          <li><a href="installations.html" class="active">Installations</a></li>
+          <li><a href="evenements.html">Événements</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
 
-    <main class="section">
-        <div class="container">
-            <h1>Nos installations</h1>
-            <div class="cards">
-                <div class="card">
-                    <img src="images/terrain1.jpg" alt="Terrain en terre battue" loading="lazy">
-                    <h3>Terrains en terre battue</h3>
-                    <p>Parfaits pour les compétitions, entretenus régulièrement et éclairés la nuit.</p>
-                </div>
-                <div class="card">
-                    <img src="images/terrain2.jpg" alt="Terrain en gazon naturel" loading="lazy">
-                    <h3>Terrains en gazon</h3>
-                    <p>Idéals pour le confort de jeu et la variété des entraînements.</p>
-                </div>
-                <div class="card">
-                    <img src="images/clubhouse.jpg" alt="Club-house du club" loading="lazy">
-                    <h3>Club-house</h3>
-                    <p>Espace détente, restaurant, vestiaires et boutique d’équipement.</p>
-                </div>
-            </div>
+  <main>
+    <section class="section section-alt">
+      <div class="container">
+        <h1>Nos installations</h1>
+        <div class="cards">
+          <article class="card">
+            <img src="images/terrains.jpg" alt="Terrains">
+            <h3>Terrains</h3>
+            <p>Terre battue & gazon, éclairage nocturne.</p>
+          </article>
+          <article class="card">
+            <img src="images/clubhouse.jpg" alt="Club-house">
+            <h3>Club-house</h3>
+            <p>Vestiaires, salon et restauration.</p>
+          </article>
+          <article class="card">
+            <img src="images/coach.jpg" alt="Coach">
+            <h3>Equipements</h3>
+            <p>Boutique, matériel et zone d'entraînement.</p>
+          </article>
         </div>
-    </main>
+      </div>
+    </section>
+  </main>
 
-    <footer>
-        <div class="container footer-container">
-            <p>&copy; 2025 Club de Tennis - Tous droits réservés</p>
-        </div>
-    </footer>
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <p>&copy; 2025 Club de Tennis — Tous droits réservés</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
 </body>
 </html>
