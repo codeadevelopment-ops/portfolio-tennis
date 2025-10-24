@@ -1,41 +1,53 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>À propos - Club de Tennis</title>
-    <meta name="description" content="Découvrez l’histoire, les valeurs et l’équipe du Club de Tennis.">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>À propos - Club de Tennis</title>
+  <meta name="description" content="À propos du Club de Tennis : histoire, valeurs et équipe.">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="container header-container">
-            <div class="logo"><a href="index.html">🎾 Club de Tennis</a></div>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="apropos.html" class="active">À propos</a></li>
-                    <li><a href="installations.html">Installations</a></li>
-                    <li><a href="evenements.html">Événements</a></li>
-                    <li><a href="temoignages.html">Témoignages</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <header class="site-header" role="banner">
+    <div class="container header-container">
+      <a class="logo" href="index.html">🎾 Club de Tennis</a>
+      <nav aria-label="Navigation principale">
+        <ul class="nav-links">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="a-propos.html" class="active">À propos</a></li>
+          <li><a href="installations.html">Installations</a></li>
+          <li><a href="evenements.html">Événements</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
 
-    <main class="section">
-        <div class="container">
-            <h1>À propos du Club</h1>
-            <p>Notre club de tennis est né d’une passion commune pour le sport et la convivialité...</p>
-            <p>Nous proposons des cours, des tournois et un espace d’échanges pour tous les âges et tous les niveaux.</p>
-        </div>
-    </main>
+  <main>
+    <section class="section">
+      <div class="container">
+        <h1>À propos du club</h1>
+        <p>Fondé par des passionnés, notre club offre un cadre convivial et professionnel pour tous les âges.</p>
 
-    <footer>
-        <div class="container footer-container">
-            <p>&copy; 2025 Club de Tennis - Tous droits réservés</p>
-        </div>
-    </footer>
+        <h2>Nos valeurs</h2>
+        <ul>
+          <li>Esprit d'équipe et fair-play</li>
+          <li>Encadrement professionnel</li>
+          <li>Partage et convivialité</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <p>&copy; 2025 Club de Tennis — Tous droits réservés</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
 </body>
 </html>
