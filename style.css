@@ -8,13 +8,13 @@
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  background-color: #d8f3dc; /* fond vert clair */
+  background-color: #d8f3dc; /* FOND VERT CLAIR */
   color: #333;
 }
 
 /* HEADER */
 .site-header {
-  background-color: #2f7a2f; /* vert plus foncé */
+  background-color: #2f7a2f; /* VERT FONCÉ */
   padding: 20px 0;
   color: white;
 }
