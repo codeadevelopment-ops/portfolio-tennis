@@ -14,7 +14,7 @@ body {
 
 /* HEADER */
 .site-header {
-  background-color: #2f7a2f;
+  background-color: #2f7a2f; /* vert foncé */
   padding: 20px 0;
   color: white;
 }
@@ -53,7 +53,7 @@ body {
 
 /* HERO */
 .hero {
-  background-color: #95d5b2;
+  background-color: #95d5b2; /* vert doux */
   padding: 100px 0;
   text-align: center;
 }
@@ -104,6 +104,7 @@ h2 {
   color: #555;
 }
 
+/* Grille pour les points forts avec images petites */
 .strengths-grid {
   display: flex;
   flex-wrap: wrap;
@@ -112,17 +113,17 @@ h2 {
 }
 
 .strength {
+  width: 180px; /* petite largeur */
   background: white;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  width: 200px; /* petite largeur */
   text-align: center;
 }
 
 .strength-img {
   width: 100%;
-  height: 120px; /* petite hauteur */
+  height: 100px; /* petite hauteur */
   overflow: hidden;
 }
 
@@ -142,7 +143,7 @@ h2 {
 }
 
 .strength-content p {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
 }
 
 /* TEMOIGNAGES */
@@ -168,6 +169,7 @@ blockquote {
   display: flex;
   flex-direction: column; /* tout en colonne */
   align-items: center;
+  justify-content: center;
   text-align: center;
 }
 
@@ -195,3 +197,4 @@ blockquote {
     height: auto;
   }
 }
+
