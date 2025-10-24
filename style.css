@@ -8,13 +8,13 @@
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  background-color: #d8f3dc; /* FOND VERT CLAIR */
+  background-color: #d8f3dc; /* fond vert clair */
   color: #333;
 }
 
 /* HEADER */
 .site-header {
-  background-color: #2f7a2f; /* VERT FONCÉ */
+  background-color: #2f7a2f; /* vert foncé */
   padding: 20px 0;
   color: white;
 }
@@ -78,7 +78,7 @@ body {
 }
 
 /* POINTS FORTS */
-.section {
+.section, .section-alt {
   padding: 60px 0;
 }
 
@@ -117,10 +117,16 @@ h2 {
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
+.strength-img {
+  width: 100%;
+  height: 200px; /* taille fixe pour que toutes les images soient identiques */
+  overflow: hidden;
+}
+
 .strength-img img {
   width: 100%;
-  height: 200px;
-  object-fit: cover;
+  height: 100%;
+  object-fit: cover; /* garde les proportions de l'image */
 }
 
 .strength-content {
@@ -150,12 +156,34 @@ blockquote {
 .site-footer {
   background-color: #2f7a2f;
   color: white;
-  padding: 20px 0;
+  padding: 40px 20px 20px 20px;
   text-align: center;
+}
+
+.site-footer nav {
+  margin-top: 10px;
 }
 
 .site-footer a img {
   width: 24px;
   height: 24px;
   margin-left: 10px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  .strengths-grid {
+    grid-template-columns: 1fr; /* une seule colonne sur mobile */
+  }
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
