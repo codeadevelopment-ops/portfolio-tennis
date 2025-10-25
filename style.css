@@ -86,7 +86,7 @@ body {
 }
 
 .strength {
-  width: 80px; /* 5x plus petit qu’avant */
+  width: 100px; /* largeur ajustée */
   background: white;
   border-radius: 8px;
   overflow: hidden;
@@ -96,7 +96,7 @@ body {
 
 .strength-img {
   width: 100%;
-  height: 40px; /* Hauteur mini */
+  height: 60px; /* hauteur proportionnelle */
   overflow: hidden;
 }
 
@@ -109,16 +109,16 @@ body {
 
 /* Texte sous la mini image */
 .strength-content {
-  padding: 5px;
+  padding: 6px;
 }
 
 .strength-content h3 {
   margin-bottom: 3px;
-  font-size: 0.7rem;
+  font-size: 0.75rem;
 }
 
 .strength-content p {
-  font-size: 0.6rem;
+  font-size: 0.65rem;
   color: #555;
 }
 
@@ -132,8 +132,8 @@ body {
 }
 
 .page-img {
-  width: 80px;
-  height: 40px;
+  width: 100px;
+  height: 60px;
   border-radius: 6px;
   overflow: hidden;
   box-shadow: 0 0 8px rgba(0,0,0,0.1);
@@ -160,7 +160,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  width: 260px;
+  width: 280px;
   margin: 20px auto 0;
 }
 
