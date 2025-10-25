@@ -1,62 +1,63 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Installations - Club de Tennis</title>
-  <meta name="description" content="Terrains, club-house et équipements du Club de Tennis.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Installations</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* CSS minimal pour tester si tu n'as pas encore style.css */
+    .page-grid {
+      display: flex;
+      gap: 20px; /* espace entre les images */
+      flex-wrap: wrap; /* pour les écrans petits */
+    }
+
+    .page-img {
+      width: 120px;
+      height: 70px;
+      overflow: hidden;
+      border-radius: 5px;
+      flex-shrink: 0;
+    }
+
+    .page-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    header, footer {
+      text-align: center;
+      margin: 20px 0;
+    }
+  </style>
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-container">
-      <a class="logo" href="index.html">🎾 Club de Tennis</a>
-      <nav aria-label="Navigation principale">
-        <ul class="nav-links">
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="a-propos.html">À propos</a></li>
-          <li><a href="installations.html" class="active">Installations</a></li>
-          <li><a href="evenements.html">Événements</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-      <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
+  <header>
+    <h1>Nos Installations</h1>
   </header>
 
   <main>
-    <section class="section section-alt">
-      <div class="container">
-        <h1>Nos installations</h1>
-        <div class="cards">
-          <article class="card">
-            <img src="images/terrains.jpg" alt="Terrains">
-            <h3>Terrains</h3>
-            <p>Terre battue & gazon, éclairage nocturne.</p>
-          </article>
-          <article class="card">
-            <img src="images/clubhouse.jpg" alt="Club-house">
-            <h3>Club-house</h3>
-            <p>Vestiaires, salon et restauration.</p>
-          </article>
-          <article class="card">
-            <img src="images/coach.jpg" alt="Coach">
-            <h3>Equipements</h3>
-            <p>Boutique, matériel et zone d'entraînement.</p>
-          </article>
+    <section class="installations">
+      <div class="page-grid">
+        <div class="page-img">
+          <img src="terrain.jpg" alt="Terrain de tennis">
         </div>
+        <div class="page-img">
+          <img src="clubhouse.jpg" alt="Clubhouse">
+        </div>
+        <div class="page-img">
+          <img src="vestiaires.jpg" alt="Vestiaires">
+        </div>
+        <!-- Tu peux ajouter d'autres images ici -->
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-container">
-      <p>&copy; 2025 Club de Tennis — Tous droits réservés</p>
-    </div>
+  <footer>
+    <p>&copy; 2025 Club de Tennis</p>
   </footer>
-
-  <script src="script.js" defer></script>
 </body>
 </html>
