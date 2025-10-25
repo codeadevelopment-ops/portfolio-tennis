@@ -14,7 +14,7 @@ body {
 
 /* HEADER */
 .site-header {
-  background-color: #2f7a2f; /* vert foncé */
+  background-color: #2f7a2f;
   padding: 20px 0;
   color: white;
 }
@@ -54,18 +54,18 @@ body {
 /* HERO */
 .hero {
   background-color: #95d5b2;
-  padding: 100px 0;
+  padding: 80px 0;
   text-align: center;
 }
 
 .hero-content h1 {
-  font-size: 3rem;
-  margin-bottom: 20px;
+  font-size: 2.5rem;
+  margin-bottom: 15px;
 }
 
 .hero-content p {
-  font-size: 1.2rem;
-  margin-bottom: 30px;
+  font-size: 1.1rem;
+  margin-bottom: 25px;
 }
 
 .btn {
@@ -77,72 +77,76 @@ body {
   border-radius: 5px;
 }
 
-/* SECTIONS AVEC IMAGES UNIFORMES (Points forts, Installations, Événements) */
-.uniform-grid {
+/* ===== IMAGES DE L’ACCUEIL ===== */
+.strengths-grid {
   display: flex;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
 }
 
-.uniform-item {
-  width: 180px;       /* même largeur que points forts */
-  text-align: center;
+.strength {
+  width: 180px; /* encore plus petit */
   background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.strength-img {
+  width: 100%;
+  height: 100px; /* réduit la hauteur */
+  overflow: hidden;
+}
+
+.strength-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ===== AUTRES PAGES ===== */
+.page-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.page-img {
+  width: 180px;  /* même taille que accueil */
+  height: 100px;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-.uniform-item img {
+.page-img img {
   width: 100%;
-  height: 100px;      /* même hauteur que points forts */
+  height: 100%;
   object-fit: cover;
 }
 
-.uniform-item h3 {
-  font-size: 1rem;
-  margin: 5px 0;
-}
-
-.uniform-item p {
-  font-size: 0.85rem;
-  padding: 0 10px 10px 10px;
-}
-
-/* TEMOIGNAGES */
-.testimonials {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  text-align: center;
-}
-
-blockquote {
-  font-style: italic;
-  background: #f0fff0;
-  padding: 20px;
-  border-left: 5px solid #2f7a2f;
-}
-
-/* CONTACT / FOOTER */
+/* ===== CONTACT ===== */
 .site-footer {
   background-color: #2f7a2f;
   color: white;
   padding: 40px 20px;
   display: flex;
-  flex-direction: column; /* colonne verticale */
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
   text-align: center;
 }
 
 .contact-form {
   display: flex;
-  flex-direction: column; /* colonne verticale */
+  flex-direction: column;
   gap: 15px;
-  width: 300px;          /* largeur du formulaire */
-  margin: 20px auto 0 auto; /* centré */
+  width: 280px; /* légèrement plus étroit */
+  margin: 20px auto 0;
 }
 
 .contact-form input,
@@ -166,6 +170,7 @@ blockquote {
   background-color: #1f5a1f;
 }
 
+/* RESEAUX */
 .site-footer nav {
   margin-top: 10px;
 }
@@ -178,15 +183,19 @@ blockquote {
 
 /* RESPONSIVE */
 @media (max-width: 768px) {
-  .hero-content h1 {
-    font-size: 2rem;
-  }
-  .uniform-grid {
+  .strengths-grid,
+  .page-grid {
     flex-direction: column;
     align-items: center;
   }
-  .uniform-item {
-    width: 80%; /* plus large sur mobile */
+
+  .strength,
+  .page-img {
+    width: 80%;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
   }
 }
 
