@@ -86,7 +86,7 @@ body {
 }
 
 .strength {
-  width: 100px; /* largeur ajustée */
+  width: 120px; /* largeur */
   background: white;
   border-radius: 8px;
   overflow: hidden;
@@ -96,7 +96,7 @@ body {
 
 .strength-img {
   width: 100%;
-  height: 60px; /* hauteur proportionnelle */
+  height: 70px; /* hauteur */
   overflow: hidden;
 }
 
@@ -107,18 +107,18 @@ body {
   display: block;
 }
 
-/* Texte sous la mini image */
+/* Texte sous l’image */
 .strength-content {
   padding: 6px;
 }
 
 .strength-content h3 {
   margin-bottom: 3px;
-  font-size: 0.75rem;
+  font-size: 0.8rem;
 }
 
 .strength-content p {
-  font-size: 0.65rem;
+  font-size: 0.7rem;
   color: #555;
 }
 
@@ -132,8 +132,8 @@ body {
 }
 
 .page-img {
-  width: 100px;
-  height: 60px;
+  width: 120px;
+  height: 70px;
   border-radius: 6px;
   overflow: hidden;
   box-shadow: 0 0 8px rgba(0,0,0,0.1);
