@@ -8,7 +8,7 @@
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  background-color: #d8f3dc; /* fond vert clair */
+  background-color: #d8f3dc;
   color: #333;
 }
 
@@ -86,17 +86,17 @@ body {
 }
 
 .strength {
-  width: 180px; /* encore plus petit */
+  width: 80px; /* 5x plus petit qu’avant */
   background: white;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
   text-align: center;
 }
 
 .strength-img {
   width: 100%;
-  height: 100px; /* réduit la hauteur */
+  height: 40px; /* Hauteur mini */
   overflow: hidden;
 }
 
@@ -107,21 +107,36 @@ body {
   display: block;
 }
 
+/* Texte sous la mini image */
+.strength-content {
+  padding: 5px;
+}
+
+.strength-content h3 {
+  margin-bottom: 3px;
+  font-size: 0.7rem;
+}
+
+.strength-content p {
+  font-size: 0.6rem;
+  color: #555;
+}
+
 /* ===== AUTRES PAGES ===== */
 .page-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 15px;
   justify-content: center;
   margin-top: 30px;
 }
 
 .page-img {
-  width: 180px;  /* même taille que accueil */
-  height: 100px;
-  border-radius: 8px;
+  width: 80px;
+  height: 40px;
+  border-radius: 6px;
   overflow: hidden;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
 }
 
 .page-img img {
@@ -144,8 +159,8 @@ body {
 .contact-form {
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  width: 280px; /* légèrement plus étroit */
+  gap: 10px;
+  width: 260px;
   margin: 20px auto 0;
 }
 
@@ -153,10 +168,10 @@ body {
 .contact-form textarea,
 .contact-form button {
   width: 100%;
-  padding: 10px;
+  padding: 8px;
   border-radius: 5px;
   border: 1px solid #ccc;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 .contact-form button {
@@ -170,15 +185,15 @@ body {
   background-color: #1f5a1f;
 }
 
-/* RESEAUX */
+/* RÉSEAUX SOCIAUX */
 .site-footer nav {
   margin-top: 10px;
 }
 
 .site-footer a img {
-  width: 24px;
-  height: 24px;
-  margin-left: 10px;
+  width: 22px;
+  height: 22px;
+  margin-left: 8px;
 }
 
 /* RESPONSIVE */
@@ -191,7 +206,7 @@ body {
 
   .strength,
   .page-img {
-    width: 80%;
+    width: 60%;
   }
 
   .hero-content h1 {
